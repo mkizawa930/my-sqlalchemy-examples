@@ -1,0 +1,25 @@
+[project]
+name = "my-sqlalchemy-playground"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "sqlalchemy>=2.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
+
+# [tool.setuptools.packages]
+# find = { include = ["db*"] }
+
+[tool.uv]
+package = true
+
+
+
+[tool.ruff]
+line-length = 120
